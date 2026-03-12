@@ -1,6 +1,7 @@
 package com.th.projectappv5;
 
 import java.io.Serializable;
+
 public class Member implements Serializable {
     private String id;
     private String names;

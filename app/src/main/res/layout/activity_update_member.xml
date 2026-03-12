@@ -5,13 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateMember">
+    tools:context=".UpdateMember">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
+        android:layout_marginTop="60dp"
         android:orientation="vertical">
+
         <EditText
             android:id="@+id/idEdtMemberName"
             android:layout_width="match_parent"
@@ -35,14 +37,27 @@
             android:layout_margin="10dp"
             android:hint="Member E-mail"
             tools:ignore="MissingConstraints" />
-        <Button
-            android:id="@+id/idBtnInsert"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="Insert Data"
-            android:textAllCaps="false"
-            tools:ignore="MissingConstraints" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/idBtnUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Update Data"
+                android:textAllCaps="false"
+                tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/idBtnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Delete Data"
+                android:textAllCaps="false"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
         <ProgressBar
             android:id="@+id/idPBLoading"
             android:layout_width="wrap_content"
@@ -51,5 +66,6 @@
             android:visibility="gone"
             tools:ignore="MissingConstraints" />
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
